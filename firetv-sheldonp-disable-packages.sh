@@ -48,6 +48,7 @@ adb shell pm disable-user --user 0 com.amazon.kso.blackbird # Kindle Special Off
 adb shell pm disable-user --user 0 com.amazon.tv.fw.metrics # FrameworkMetrics
 adb shell pm disable-user --user 0 com.amazon.communication.discovery # Should be save as long as Vizzini is disabled
 
+# All other packages, not yet decided
 
 << 'Comment'
 adb shell pm disable-user --user 0 com.amazon.alta.h2clientservice
@@ -62,7 +63,6 @@ adb shell pm disable-user --user 0 com.amazon.avls.experience
 adb shell pm disable-user --user 0 com.amazon.avod
 adb shell pm disable-user --user 0 com.amazon.avsyncslider
 adb shell pm disable-user --user 0 com.amazon.awvflingreceiver
-
 
 adb shell pm disable-user --user 0 com.amazon.cast.sink
 adb shell pm disable-user --user 0 com.amazon.ceviche
@@ -110,13 +110,11 @@ adb shell pm disable-user --user 0 com.amazon.ftv.profilepicker
 adb shell pm disable-user --user 0 com.amazon.ftv.screensaver
 adb shell pm disable-user --user 0 com.amazon.ftv.xpicker
 
-
 adb shell pm disable-user --user 0 com.amazon.identity.auth.device.authorization
 
 adb shell pm disable-user --user 0 com.amazon.imp
 adb shell pm disable-user --user 0 com.amazon.katoch
 adb shell pm disable-user --user 0 com.amazon.kindleautomatictimezone
-
 
 adb shell pm disable-user --user 0 com.amazon.minerva.client.api
 adb shell pm disable-user --user 0 com.amazon.naatyam
@@ -130,7 +128,6 @@ adb shell pm disable-user --user 0 com.amazon.providers.tv
 
 adb shell pm disable-user --user 0 com.amazon.securitysyncclient
 adb shell pm disable-user --user 0 com.amazon.sharingservice.android.client.proxy
-
 
 adb shell pm disable-user --user 0 com.amazon.ssdpservice
 adb shell pm disable-user --user 0 com.amazon.ssm
@@ -237,7 +234,5 @@ adb shell pm disable-user --user 0 com.android.wallpapercropper
 adb shell pm disable-user --user 0 com.android.wallpaperpicker
 adb shell pm disable-user --user 0 com.fireos.arcus.proxy
 adb shell pm disable-user --user 0 com.fireos.usagestats.proxy
-
-
 
 Comment
