@@ -36,9 +36,16 @@ adb shell pm disable-user --user 0 com.ivona.tts.oem
 adb shell pm disable-user --user 0 com.amazon.gloria.smarthome
 adb shell pm disable-user --user 0 com.amazon.ftv.glorialist
 
+# Amazon Device Messaging (related to Prime, cannot be disabled)
+# adb shell pm disable-user --user 0 com.amazon.device.messaging
+# adb shell pm disable-user --user 0 com.amazon.device.messaging.sdk.internal.library
+# adb shell pm disable-user --user 0 com.amazon.device.messaging.sdk.library
+# adb shell pm disable-user --user 0 com.amazon.firebat
+# adb shell pm disable-user --user 0 com.amazon.avod
+
 # Various Packages, probably save to disable?
 adb shell pm disable-user --user 0 com.amazon.logan # VoiceView (Screenreader)
-adb shell pm disable-user --user 0 com.amazon.device.logmanager # Logmanager
+# adb shell pm disable-user --user 0 com.amazon.device.logmanager # Logmanager, protected, cannot be disabled
 adb shell pm disable-user --user 0 com.amazon.cardinal # Smarthome camera control/Ring Doorbell?
 adb shell pm disable-user --user 0 com.amazon.ods.kindleconnect
 adb shell pm disable-user --user 0 com.amazon.device.sale.service
@@ -47,6 +54,7 @@ adb shell pm disable-user --user 0 com.amazon.tv.alexanotifications
 adb shell pm disable-user --user 0 com.amazon.kso.blackbird # Kindle Special Offer = Banner Ads
 adb shell pm disable-user --user 0 com.amazon.tv.fw.metrics # FrameworkMetrics
 adb shell pm disable-user --user 0 com.amazon.communication.discovery # Should be save as long as Vizzini is disabled
+adb shell pm disable-user --user 0 com.amazon.ftv.screensaver
 
 # All other packages, not yet decided
 
@@ -60,7 +68,7 @@ adb shell pm disable-user --user 0 com.amazon.aria
 adb shell pm disable-user --user 0 com.amazon.autopairservice
 
 adb shell pm disable-user --user 0 com.amazon.avls.experience
-adb shell pm disable-user --user 0 com.amazon.avod
+
 adb shell pm disable-user --user 0 com.amazon.avsyncslider
 adb shell pm disable-user --user 0 com.amazon.awvflingreceiver
 
@@ -84,9 +92,7 @@ adb shell pm disable-user --user 0 com.amazon.device.crashmanager
 adb shell pm disable-user --user 0 com.amazon.device.details
 
 adb shell pm disable-user --user 0 com.amazon.device.lowstoragemanager
-adb shell pm disable-user --user 0 com.amazon.device.messaging
-adb shell pm disable-user --user 0 com.amazon.device.messaging.sdk.internal.library
-adb shell pm disable-user --user 0 com.amazon.device.messaging.sdk.library
+
 adb shell pm disable-user --user 0 com.amazon.device.metrics
 adb shell pm disable-user --user 0 com.amazon.device.rdmapplication
 
@@ -100,14 +106,14 @@ adb shell pm disable-user --user 0 com.amazon.dialservice
 adb shell pm disable-user --user 0 com.amazon.diode
 adb shell pm disable-user --user 0 com.amazon.dpcclient
 adb shell pm disable-user --user 0 com.amazon.dp.logger
-adb shell pm disable-user --user 0 com.amazon.firebat
+
 adb shell pm disable-user --user 0 com.amazon.firehomestarter
 adb shell pm disable-user --user 0 com.amazon.fireinputdevices
 adb shell pm disable-user --user 0 com.amazon.franktvinput
 adb shell pm disable-user --user 0 com.amazon.ftvads.deeplinking
 
 adb shell pm disable-user --user 0 com.amazon.ftv.profilepicker
-adb shell pm disable-user --user 0 com.amazon.ftv.screensaver
+
 adb shell pm disable-user --user 0 com.amazon.ftv.xpicker
 
 adb shell pm disable-user --user 0 com.amazon.identity.auth.device.authorization
